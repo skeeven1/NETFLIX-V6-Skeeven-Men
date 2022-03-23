@@ -28,10 +28,14 @@ function hiddenHeader() {
   }
 }
 
+function RandomImg1() {
 
 
-
-
+  for (let i = 1; i < 10; i++) {
+    var randomNum = Math.floor(Math.random() * jojoImg.length);
+    document.getElementById("jojo" + i.toString()).src = jojoImg[randomNum];
+} 
+}
 
 var jojoImg = new Array(
   "assets/img/images main/jojop1.jpg",
@@ -45,33 +49,31 @@ var jojoImg = new Array(
 
 
 
+function videohover2 (videolocation, video,img){
+  var videolocation =document.querySelector(videolocation)
+  var video =document.querySelector(video)
+  var image = document.querySelector(img)
 
-
-
-function RandomImg1() {
-  
-  
-  for (let i = 1; i < 10; i++) {
-    var randomNum = Math.floor(Math.random() * jojoImg.length);
-    document.getElementById("jojo" + i.toString()).src = jojoImg[randomNum];
-} 
+  videolocation.addEventListener('mylistRandom', function (){
+      video.play()
+      $(video).show()
+      $(image).hide()
+  })
+  videolocation.addEventListener('mylistRandom', function (){
+      video.pause()
+      $(video).hide()
+      $(image).show()
+  });
 }
 
+videohover('.mainhover','.videogantz1')
+videohover2('.carouselhoverimg2','.videogantz2',".hoverimg2")
 
 
-let image_array1 = ["assets/img/images main/one piece.jpg",  
-"assets/img/images main/akame.jpg", 
-"assets/img/images main/yamada.jpg",
-"assets/img/images main/chainsaw.jpg",
-"assets/img/images main/tqq2.jpg", 
-"assets/img/images main/solo.jpg"] 
 
-function RandomImg(){ 
-    var index = Math.floor(Math.random()*image_array.length)           
-    document.getElementById("random").src = image_array[index];         
-}
 
-  
+     
+
 
 
 
