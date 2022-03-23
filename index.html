@@ -33,13 +33,11 @@
         
         <style>
         .no-scrollbar::-webkit-scrollbar {display: none;}
-
-    
-
         </style>
 
-        <script src="main.js"> </script>
-        
+        <script src="main.js"></script>
+
+    
     
     </head>
 
@@ -101,10 +99,10 @@
                 
                 
 
-                <div>
+                <div> 
 
-                    <img src="assets/img/images main/oussama.jpg" alt="ranking_of_king" class="w-full h-screen object-cover z-20 absolute opacity-100 hover:opacity-0" onmousemove="jojo(); onmouseout=lion();"/>  
-                    <video autoplay muted loop src="rok_trailer.mp4" alt="ranking_of_king" class="w-full h-screen object-cover z-10 absolute hover:opacity-100"></video>
+                    <img src="assets/img/images main/oussama.jpg" alt="ranking_of_king" class="w-full h-screen object-cover z-20 absolute opacity-100 hover:opacity-0 " onmousemove="jojo(); onmouseout=lion();"/>  
+                    <video autoplay muted src="rok_trailer.mp4" alt="ranking_of_king" class=" w-full h-screen object-cover z-10 absolute video "></video>
                     
                     <div class="absolute top-40 px-16 z-40">
 
@@ -143,7 +141,7 @@
          <h1 class="text-white text-2xl ml-10 font-bold">My List</h1> 
         <section class=" my-6 mx-12 space-y-4 carousel overflow-x-scroll scroll-smooth mb-12 no-scrollbar">
             
-            
+             <div class="flex space-x-2  ">
                     
                     <div class="group">
                         
@@ -152,44 +150,36 @@
                         <button class=" p-4 h-48 mr-2 focus:outline-none"><i class="fas fa-angle-left text-white text-3xl"></i></button>
                     </div>
                      </div>   
+                        </div>
                         
-
-                        <div class="bg-gradient-to-l from-black absolute right-2 text-3xl opacity-0 group-hover:opacity-100 w-48 h-[194px] ">
-                            <div class="absolute right-0 cursor-pointer rightArrow" onclick="rightScroll('.carousel', '.rightArrow')">
-                                <button class="p-4 h-48 mr-2 focus:outline-none"><i class="fas fa-angle-right text-white text-3xl"></i></button>
+                      
+                            <img src="assets/img/images main/erased.png" alt="erased" class="rounded-lg  w-80 cursor-pointer hover:scale-125 transition duration-[300ms]" id="mylistRandom1">
+                            
+                        
+                        
+                          
+                            <img src="assets/img/images main/rezero.jpg" alt="rezero" class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[300ms] " id="mylistRandom2">
+                            
+                       
+                    
+                            <img src="assets/img/images main/hero.jpg" alt="hero" class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[300ms] " id="mylistRandom3">
+                    
+                    
+                            <img src="assets/img/images main/tpm.jpg" alt="tpm" class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[300ms] " id="mylistRandom4">
+                    
+                    
+                            <img src="assets/img/images main/ragf.jpg" alt="ragf" class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[300ms] " idZ="mylistRandom5">
+                    
+                            <img src="assets/img/images main/kakegurui.png" alt="kakegurui" class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[300ms] " id="mylistRandom6">
+                        
+                        
+                        <div class="group">
+                            
+                            <div class="bg-gradient-to-l from-black absolute right-2 text-3xl opacity-0 group-hover:opacity-100 w-48 h-[194px] ">
+                        <div class="absolute right-0 cursor-pointer rightArrow" onclick="rightScroll('.carousel', '.rightArrow')">
+                            <button class="p-4 h-48 mr-2 focus:outline-none"><i class="fas fa-angle-right text-white text-3xl"></i></button>
+                        </div>
                             </div>
-                                </div>
-                
-                
-                    <div class="flex flex-row space-x-2  ">         
-                        <a class="carouselhoverimg2">
-                        <img src="assets/img/images main/erased.png" alt="erased" class="hoverimg2 rounded-lg  w-80 cursor-pointer hover:scale-125 transition duration-[255ms]" id="mylistRandom1">
-                        <video loop="loop" muted class="hover:scale-125 transition duration-[300ms] overflow-visible videogantz2 ml-[3rem] hidden rounded-xl object-cover w-[22.2rem] h-[12rem] object-cover z-0">
-                            <source src="rok_trailer.mp4">
-                        </video>
-                        <a>
-                    
-                            
-                            
-                            <a>
-                        <img src="assets/img/images main/rezero.jpg" alt="rezero" class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[255ms] " id="mylistRandom2">
-                            </a>
-                            <a>
-                        <img src="assets/img/images main/hero.jpg" alt="hero" class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[255ms] " id="mylistRandom3">
-                    </a>
-                    <a>
-                        <img src="assets/img/images main/tpm.jpg" alt="tpm" class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[255ms] " id="mylistRandom4">
-                    </a>
-                    
-                    <a>
-                        <img src="assets/img/images main/ragf.jpg" alt="ragf" class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[255ms] " id="mylistRandom5">
-                    </a>
-                    <a>
-                        <img src="assets/img/images main/kakegurui.png" alt="kakegurui" class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[255ms] " id="mylistRandom6">
-                    </a>    
-                        
-                        
-                           
                       
                     
                         
@@ -206,7 +196,7 @@
             
             <div></div>
                 
-                <div class="flex space-x-2">
+                <div class="flex space-x-2 overflow-y-hidden no-scrollbar">
 
                     <div class="group">
                         
@@ -218,23 +208,21 @@
                         </div>
                      
 
+                        <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[300ms]"  src="assets/img/images main/raimbow.jpg" id="youforRandom1">
                     
                     
-                        <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[255ms] "  src="assets/img/images main/raimbow.jpg" id="youforRandom1">
+                        <img  class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[300ms] "src="assets/img/images main/myneighbortotoro.png" id="youforRandom2">
                     
                     
-                        <img  class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[255ms] "src="assets/img/images main/myneighbortotoro.png" id="youforRandom2">
+                        <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[300ms] " src="assets/img/images main/myheroacademia.png" id="youforRandom3" >
                     
                     
-                        <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[255ms] " src="assets/img/images main/myheroacademia.png" id="youforRandom3" >
+                        <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[300ms] " src="assets/img/images main/onepunchman.png" id="youforRandom4">
                     
                     
-                        <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[255ms] " src="assets/img/images main/onepunchman.png" id="youforRandom4">
+                        <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[300ms] " src="assets/img/images main/narutothelast.png" id="youforRandom5">
                     
-                    
-                        <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[255ms] " src="assets/img/images main/narutothelast.png" id="youforRandom5">
-                    
-                        <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[255ms] " src="assets/img/images main/lacasadepapel.png" id="youforRandom6">
+                        <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[300ms] " src="assets/img/images main/lacasadepapel.png" id="youforRandom6">
 
                         <div class="group ">
                             
@@ -267,22 +255,22 @@
                                     <button class="p-4 h-48 mr-2 focus:outline-none"><i class="fas fa-angle-right text-white text-3xl"></i></button>
                                 </div>
                                     </div>
-                    <div class="space-x-2 flex items-center"> 
+                    <div class="space-x-2 flex items-center overflow-y-hidden no-scrollbar"> 
 
                         
             
                         
-                                <img id="TrendingnowImg1" class="w-80 rounded-lg cursor-pointer hover:scale-125 transition duration-[255ms]" src="assets/img/images main/mc.jpg" alt="minecraft">
+                                <img id="TrendingnowImg1" class="w-80 rounded-lg cursor-pointer hover:scale-125 transition duration-[300ms]" src="assets/img/images main/mc.jpg" alt="minecraft">
                           
-                                <img id="TrendingnowImg2"class="w-80 rounded-lg cursor-pointer hover:scale-125 transition duration-[255ms]" src="assets/img/images main/attackontitan.png" alt="aot">
+                                <img id="TrendingnowImg2"class="w-80 rounded-lg cursor-pointer hover:scale-125 transition duration-[300ms]" src="assets/img/images main/attackontitan.png" alt="aot">
         
-                                <img id="TrendingnowImg3" class="w-80 rounded-lg cursor-pointer hover:scale-125 transition duration-[255ms]" src="assets/img/images main/assassinationclassroom.png" alt="ac">
+                                <img id="TrendingnowImg3" class="w-80 rounded-lg cursor-pointer hover:scale-125 transition duration-[300ms]" src="assets/img/images main/assassinationclassroom.png" alt="ac">
                           
-                                <img id="TrendingnowImg4" class="w-80 rounded-lg cursor-pointer hover:scale-125 transition duration-[255ms]" src="assets/img/images main/assassinscreed.png" alt="as">
+                                <img id="TrendingnowImg4" class="w-80 rounded-lg cursor-pointer hover:scale-125 transition duration-[300ms]" src="assets/img/images main/assassinscreed.png" alt="as">
                           
-                                <img id="TrendingnowImg5" class="w-80 rounded-lg cursor-pointer hover:scale-125 transition duration-[255ms]" src="assets/img/images main/berserk.png" alt="berserk">
+                                <img id="TrendingnowImg5" class="w-80 rounded-lg cursor-pointer hover:scale-125 transition duration-[300ms]" src="assets/img/images main/berserk.png" alt="berserk">
                           
-                                <img  id="TrendingnowImg6" class="w-80 rounded-lg cursor-pointer hover:scale-125 transition duration-[255ms]" src="assets/img/images main/fullmetalalchemist.png" alt="fma">
+                                <img  id="TrendingnowImg6" class="w-80 rounded-lg cursor-pointer hover:scale-125 transition duration-[300ms]" src="assets/img/images main/fullmetalalchemist.png" alt="fma">
 
                                 
                           
@@ -313,23 +301,23 @@
 
                         
                         
-                        <div class="flex space-x-2">
+                        <div class="flex space-x-2 overflow-y-hidden no-scrollbar">
                             
-                                <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[255ms] " src="assets/img/images main/a love so.jpg">
-                            
-                            
-                                <img  class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[255ms] "src="assets/img/images main/ano hana.jpg">
+                                <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[300ms] " src="assets/img/images main/a love so.jpg">
                             
                             
-                                <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[255ms] " src="assets/img/images main/darling.jpg">
+                                <img  class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[300ms] "src="assets/img/images main/ano hana.jpg">
                             
                             
-                                <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[255ms] " src="assets/img/images main/inazuma.jpg">
+                                <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[300ms] " src="assets/img/images main/darling.jpg">
+                            
+                            
+                                <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[300ms] " src="assets/img/images main/inazuma.jpg">
                         
                             
-                                <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[255ms] " src="assets/img/images main/garcon d'a coté.jpg">
+                                <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[300ms] " src="assets/img/images main/garcon d'a coté.jpg">
                             
-                                <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[255ms] " src="assets/img/images main/love alarm.jpg">
+                                <img class="rounded-lg w-80 cursor-pointer hover:scale-125 transition duration-[300ms] " src="assets/img/images main/love alarm.jpg">
                             
                         </div>
                     </div>
@@ -576,7 +564,7 @@
             
             <div class="group">
                         
-        <div class=" bg-gradient-to-r from-black absolute text-3xl opacity-0 group-hover:opacity-100 w-48 h-[200px] left-0 ">
+        <div class=" bg-gradient-to-r from-black absolute text-3xl opacity-0 group-hover:opacity-100 w-48 h-[215px] left-0 ">
     <div class="absolute left-0 z-30 cursor-pointer  "onclick="leftScroll('.carousel7', '.leftArrow7')">
         <button class=" p-4 h-56 mr-2 focus:outline-none"><i class="fas fa-angle-left text-white text-3xl"></i></button>
     </div>
@@ -648,21 +636,21 @@
                 
                 
                 
-                    <img id="random" src="assets/img/images main/one piece.jpg" class="rounded-lg w-80 " >
+                    <img id="anime1" src="assets/img/images main/one piece.jpg" class="rounded-lg w-80 " >
                 
                 
-                    <img id="random" src="assets/img/images main/akame.jpg" class="rounded-lg w-80 ">
+                    <img id="anime2" src="assets/img/images main/akame.jpg" class="rounded-lg w-80 ">
                 
                 
-                    <img id="random" src="assets/img/images main/yamada.jpg" class="rounded-lg w-80 " >
+                    <img id="anime3" src="assets/img/images main/yamada.jpg" class="rounded-lg w-80 " >
                 
                 
-                    <img id="random" src="assets/img/images main/chainsaw.jpg" class="rounded-lg w-80" >
+                    <img id="anime4" src="assets/img/images main/chainsaw.jpg" class="rounded-lg w-80" >
             
                 
-                    <img id="random" src="assets/img/images main/tqq2.jpg" class="rounded-lg w-80 " >
+                    <img id="anime5" src="assets/img/images main/tqq2.jpg" class="rounded-lg w-80 " >
                 
-                    <img id="random" src="assets/img/images main/solo.jpg" class="rounded-lg w-80 ">
+                    <img  src="assets/img/images main/solo.jpg" class="rounded-lg w-80 ">
                 
             </div>
         </div>
@@ -693,21 +681,21 @@
             <div class="flex space-x-2">
 
                 
-                    <img class="rounded-lg w-80 " src="assets/img/images main/tg.png">
+                    <img id="japan_series1" class="rounded-lg w-80 " src="assets/img/images main/tg.png">
                 
                 
-                    <img  class="rounded-lg w-80 "src="assets/img/images main/ds.jpg">
+                    <img id="japan_series2" class="rounded-lg w-80 "src="assets/img/images main/ds.jpg">
                 
                 
-                    <img class="rounded-lg w-80 " src="assets/img/images main/dsm.webp">
+                    <img id="japan_series3" class="rounded-lg w-80 " src="assets/img/images main/dsm.webp">
                 
                 
-                    <img class="rounded-lg w-80 " src="assets/img/images main/jjk.jpg">
+                    <img id="japan_series4" class="rounded-lg w-80 " src="assets/img/images main/jjk.jpg">
             
                 
-                    <img class="rounded-lg w-80 " src="assets/img/images main/je veux manger.jpg">
+                    <img  id="japan_series5"class="rounded-lg w-80 " src="assets/img/images main/je veux manger.jpg">
                 
-                    <img class="rounded-lg w-80 " src="assets/img/images main/jjkm.jpg ">
+                    <img id="japan_series6" class="rounded-lg w-80 " src="assets/img/images main/jjkm.jpg ">
                 
             </div>
         </div>
@@ -737,21 +725,21 @@
         
         <div class="flex space-x-2">
 
-                    <img class="rounded-lg w-80 " src="assets/img/images main/redo.png">
+                    <img id="more_japan_series1" class="rounded-lg w-80 " src="assets/img/images main/redo.png">
                 
                 
-                    <img  class="rounded-lg w-80 "src="assets/img/images main/hanako.jpg">
+                    <img id="more_japan_series2"  class="rounded-lg w-80 "src="assets/img/images main/hanako.jpg">
                 
                 
-                    <img class="rounded-lg w-80 " src="assets/img/images main/ngnl.jpg">
+                    <img id="more_japan_series3" class="rounded-lg w-80 " src="assets/img/images main/ngnl.jpg">
                 
                 
-                    <img class="rounded-lg w-80 " src="assets/img/images main/devilman.jpg">
+                    <img id="more_japan_series4" class="rounded-lg w-80 " src="assets/img/images main/devilman.jpg">
             
                 
-                    <img class="rounded-lg w-80 " src="assets/img/images main/dorohedoro.jpg">
+                    <img id="more_japan_series5" class="rounded-lg w-80 " src="assets/img/images main/dorohedoro.jpg">
                 
-                    <img class="rounded-lg w-80 " src="assets/img/images main/ajin.png ">
+                    <img id="more_japan_series6" class="rounded-lg w-80 " src="assets/img/images main/ajin.png ">
                 
             </div>
         </div>
@@ -781,21 +769,21 @@
             <div class="flex space-x-2">
 
                 
-                    <img class="rounded-lg w-80 " src="assets/img/images main/haikyuu.jpg">
+                    <img id="more_japan_anime1" class="rounded-lg w-80 " src="assets/img/images main/haikyuu.jpg">
                 
                 
-                    <img  class="rounded-lg w-80 "src="assets/img/images main/parasyte.jpg">
+                    <img id="more_japan_anime2" class="rounded-lg w-80 "src="assets/img/images main/parasyte.jpg">
                 
                 
-                    <img class="rounded-lg w-80 " src="assets/img/images main/mp100.jpg">
+                    <img id="more_japan_anime3" class="rounded-lg w-80 " src="assets/img/images main/mp100.jpg">
                 
                 
-                    <img class="rounded-lg w-80 " src="assets/img/images main/tye.webp">
+                    <img id="more_japan_anime4" class="rounded-lg w-80 " src="assets/img/images main/tye.webp">
             
                 
-                    <img class="rounded-lg w-80 " src="assets/img/images main/kaguya.jpg">
+                    <img id="more_japan_anime5" class="rounded-lg w-80 " src="assets/img/images main/kaguya.jpg">
                 
-                    <img class="rounded-lg w-72 " src="assets/img/images main/blue spring.webp ">
+                    <img id="more_japan_anime6" class="rounded-lg w-72 " src="assets/img/images main/blue spring.webp ">
                 
             </div>
         </div>
