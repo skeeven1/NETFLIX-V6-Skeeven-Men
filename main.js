@@ -102,10 +102,33 @@ var animeImg = new Array(
       
       );   
 
+      function playMusic(){
+        var music = new Audio('rok_opening.mp3');
+        music.play();
+        
+        }
 
+       
+      
+        function video_hover_mylist(video_hover, video_hover_none) {
+          let variable_video = document.getElementById(video_hover)
+          variable_video.classList.add('opacity-0')
+          variable_video.classList.remove('opacity-100')    
+      
+          let variable_inverse_video = document.getElementById(video_hover_none)
+          variable_inverse_video.classList.add('opacity-100')
+          variable_inverse_video.classList.remove('opacity-0')
+      }
 
-
-
+      function video_hove_mylist2(video_hover, video_hover_none) {
+        let variable_video = document.getElementById(video_hover)
+        variable_video.classList.remove('opacity-0')
+        variable_video.classList.add('opacity-100') 
+    
+        let variable_inverse_video = document.getElementById(video_hover_none)
+        variable_inverse_video.classList.add('opacity-0')
+        variable_inverse_video.classList.remove('opacity-100')
+    }
      
 
 
