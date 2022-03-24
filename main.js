@@ -110,7 +110,7 @@ var animeImg = new Array(
 
        
       
-        function video_hover_mylist(video_hover, video_hover_none) {
+          function video_hover_mylist(video_hover, video_hover_none) {
           let variable_video = document.getElementById(video_hover)
           variable_video.classList.add('opacity-0')
           variable_video.classList.remove('opacity-100')    
@@ -120,7 +120,7 @@ var animeImg = new Array(
           variable_inverse_video.classList.remove('opacity-0')
       }
 
-      function video_hove_mylist2(video_hover, video_hover_none) {
+      function video_hover_mylist2(video_hover, video_hover_none) {
         let variable_video = document.getElementById(video_hover)
         variable_video.classList.remove('opacity-0')
         variable_video.classList.add('opacity-100') 
